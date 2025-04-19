@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maitri Patangiya - Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #212121;
+      --card-color: #f8f9fa;
+      --header-bg: linear-gradient(to right, #ff758c, #ff7eb3);
+      --highlight-color: #ff4081;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-color: #1f1f1f;
+      --header-bg: linear-gradient(to right, #3a3a3a, #1c1c1c);
+      --highlight-color: #bb86fc;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 40px;
+      transition: background 0.3s;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    .toggle-mode {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: var(--card-color);
+      color: var(--text-color);
+      border: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: var(--card-color);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.4s; }
+    .card:nth-child(4) { animation-delay: 0.6s; }
+    .card:nth-child(5) { animation-delay: 0.8s; }
+
+    h2 {
+      color: var(--highlight-color);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--highlight-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <header>
+    <h1>Maitri Patangiya</h1>
+    <p>Aspiring AI & ML Engineer | Cybersecurity | Data Science | Space-Tech Enthusiast</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Hi! I'm <strong>Maitri Patangiya</strong>, a passionate and curious learner with a strong interest in emerging technologies. I completed my 12th from <strong>Queens' College, Indore</strong> and am currently pursuing my B.Tech in <strong>Computer Science and Information Technology</strong> at <strong>Symbiosis University of Applied Sciences</strong>. I am deeply fascinated by Artificial Intelligence, Machine Learning, Data Science, Cybersecurity, and space-related innovations. With a sharp eye for detail and a genuine curiosity for how things work, I aim to become a professional who contributes meaningfully to the tech-driven future.</p>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech in CSIT</strong> – Symbiosis University of Applied Sciences (Ongoing)</li>
+        <li><strong>Higher Secondary</strong> – Queens' College, Indore</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Technical:</strong> SQL, DBMS, Java, Python, C, C++, Data Structures, HTML, CSS, JavaScript, Web Development</li>
+        <li><strong>Soft Skills:</strong> Teamwork, Decision Making</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:maitripatangiya@gmail.com">maitripatangiya@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/maitri-patangiya" target="_blank">linkedin.com/in/maitri-patangiya</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Maitri Patangiya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+
+</body>
+</html>
