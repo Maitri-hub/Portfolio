@@ -126,15 +126,43 @@
         font-size: 1rem;
       }
     }
+
+    .resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--highlight-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #ff5e9c; /* Slightly darker pink */
+}
+
+.projects ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.projects li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
   </style>
 </head>
 <body>
 
-  <button class="toggle-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <button class="toggle-mode" onclick="toggleDarkMode()">Dark Mode</button>
 
   <header>
     <h1>Maitri Patangiya</h1>
-    <p>Aspiring AI & ML Engineer | Cybersecurity | Data Science | Space-Tech Enthusiast</p>
+    <p>B.Tech CSIT Student | Aspiring AI & ML Engineer | Actively Learning Python & AI</p>
   </header>
 
   <section>
@@ -152,12 +180,35 @@
     </div>
 
     <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/maitri-hub/EmployeeManagementSystem" target="_blank">
+          Employee Management System (Java,SQL)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/maitri-hub/PersonalPortfolio" target="_blank">
+          Personal Portfolio Website (HTML, CSS, JS)
+        </a>
+      </li>
+    </ul>
+  </div>
+
+    <div class="card">
       <h2>Skills</h2>
       <ul>
         <li><strong>Technical:</strong> SQL, DBMS, Java, Python, C, C++, Data Structures, HTML, CSS, JavaScript, Web Development</li>
         <li><strong>Soft Skills:</strong> Teamwork, Decision Making</li>
       </ul>
     </div>
+
+    <div class="card">
+    <h2>Resume</h2>
+    <a href="https://yourdomain.com/path-to-resume.pdf" target="_blank" download>
+      <button>Download My Resume</button>
+    </a>
+  </div>
 
     <div class="card">
       <h2>Contact</h2>
